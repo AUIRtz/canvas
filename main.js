@@ -1,5 +1,8 @@
 var canvas = document.getElementById('canvas')
 var context = canvas.getContext('2d')
+document.body.ontouchstart = function(cancel){
+    cancel.preventDefault()
+}
 autoSetCanvasSize(canvas)
 monitorUser(canvas)
 var lineWidth = 5
