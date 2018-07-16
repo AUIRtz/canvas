@@ -4,13 +4,13 @@ autoSetCanvasSize(canvas)
 monitorUser(canvas)
 var lineWidth = 5
 var eraserEnabled = false
-brush.onclick = function(){ 
+brush.onclick = () =>{ 
     eraserEnabled = false
     brush.classList.add('active')
     eraser.classList.remove('active')
     context.strokeStyle = 'black'
 }
-eraser.onclick = function(){
+eraser.onclick = () =>{
     eraserEnabled = true
     eraser.classList.add('active')
     brush.classList.remove('active')
